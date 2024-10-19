@@ -1,0 +1,46 @@
+line-length = 120
+target-version = "py312"
+
+[lint]
+select = [
+  "FAST",
+  "ASYNC",
+  "RUF",
+  "PLC",
+  "PLR",
+  "PLE",
+  "PLW",
+  "PTH",
+  "ARG",
+  "TCH",
+  "SIM",
+  "RET",
+  "RSE",
+  "T20",
+  "PIE",
+  "FA",
+  "DTZ",
+  "C4",
+  "A",
+  "B",
+  "S",
+  "ANN",
+  "UP",
+  "N",
+  "I",
+  "C90",
+  "E",
+  "W",
+  "F",
+]
+preview = true
+
+[lint.flake8-type-checking]
+quote-annotations = true
+
+[lint.isort]
+required-imports = ["from __future__ import annotations"]
+split-on-trailing-comma = false
+
+[format]
+skip-magic-trailing-comma = true

@@ -1,0 +1,25 @@
+[project]
+name = "transifex-discord-webhook"
+version = "0.1.0"
+description = "Transifex -> Discord webhook"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "aiofiles>=24.1.0",
+    "aiohttp>=3.10.10",
+    "fastapi>=0.115.2",
+    "gitpython>=3.1.43",
+    "tortoise-orm>=0.21.7",
+    "uvicorn>=0.32.0",
+]
+license = { file = "LICENSE" }
+
+[tool.pyright]
+enableTypeIgnoreComments = false
+reportIncompatibleMethodOverride = false
+reportIncompatibleVariableOverride = false
+reportUnnecessaryComparison = true
+reportUnnecessaryContains = true
+reportUnnecessaryIsInstance = true
+reportUnnecessaryTypeIgnoreComment = true
+typeCheckingMode = "standard"
